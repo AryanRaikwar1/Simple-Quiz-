@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1> Ultimate Quiz </h1>
+        <div id="quiz"></div>
+        <div id="score-container" class="hidden">
+            <h2>Your Score: <span id="score">0</span> / <span id="total"></span></h2>
+            <h3>High Score: <span id="high-score">0</span></h3>
+            <button onclick="restartQuiz()">Play Again</button>
+        </div>
+    </div>
+    <audio id="correct-sound" src="correct.mp3"></audio>
+    <audio id="wrong-sound" src="wrong.mp3"></audio>
+    <audio id="timer-sound" src="tick.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
